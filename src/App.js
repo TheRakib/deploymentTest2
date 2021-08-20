@@ -1,6 +1,6 @@
 import './App.css';
-import React, {useState, useEffect, useRef, createContext} from "react";
-import axios from "axios"
+import React, {useState, useRef, createContext} from "react";
+
 import Hello from "./Hello"
 
 
@@ -12,10 +12,10 @@ const UserContext = createContext();
 
 function App() {
  // const [number, setNumber] = useState(0) 
- const [color, setColor]= useState("red")
+ const [color]= useState("red")
 
  //state
- const [state, setState]= useState("hej hej ")
+// const [state, setState]= useState("hej hej ")
 
  const refData = useRef(null)
 //refData.current ==  <input type="text" ref={refData} />
